@@ -1,0 +1,11 @@
+name: Verify the application builds
+run-name: meson-build-demo
+on: [push]
+jobs:
+  build-in-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          docker run -v $PWD:/app -w /app ubuntu:24.04 /app/install.sh
+        shell: bash

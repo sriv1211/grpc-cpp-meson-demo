@@ -1,0 +1,13 @@
+[wrap-file]
+directory = re2-2023-03-01
+source_url = https://github.com/google/re2/archive/2023-03-01.tar.gz
+source_filename = re2-2023-03-01.tar.gz
+source_hash = 7a9a4824958586980926a300b4717202485c4b4115ac031822e29aa4ef207e48
+patch_filename = re2_20230301-2_patch.zip
+patch_url = https://wrapdb.mesonbuild.com/v2/re2_20230301-2/get_patch
+patch_hash = 2ebbb91690ceafd1f24cdbbdfd9cc60f78e260779c283d1a0e1fac2afae891a9
+source_fallback_url = https://github.com/mesonbuild/wrapdb/releases/download/re2_20230301-2/re2-2023-03-01.tar.gz
+wrapdb_version = 20230301-2
+
+[provide]
+re2 = re2_dep
